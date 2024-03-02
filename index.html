@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio John Huang</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#intern">Intern</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="intro">
+      <div class="container">
+        <h1>Hello World!</h1>
+        <br>
+        <p>I am John. Currently majoring in information management in National Taiwan University.</p>
+        <br>
+        <p>Having a great passion for programming allows me to integrate technology and other fields and create interesting applications.</p> 
+      </div>
+    </section>
+
+    <section id="intern" style="text-align: center;">
+
+      <div class="container">
+        <h2>Internships</h2>
+        <br>
+        
+        <div class="internship-slider">
+          <div class="slide">
+            <h3>Machine Learning Internship</h3>
+            <br>
+            <p>
+              Providing a loan to customer has always been a crucial task for banks.</p>
+            <br>
+              <p>
+              My main job was to train a machine learning classification model
+              that can classify those who have potential to request a loan from
+              the bank. 
+            </p>
+            <br>
+              <p>
+                Thus, the loan business can grow with precise targeting.
+                Also, I introduced a data scraping framework into company for them
+                to scrape external data more efficiently.
+              </p>
+            </p>
+            <br>
+            <blackquote>ShinKong Bank</blackquote>
+          </div>
+
+          <div class="slide">
+            <h3>Data Engineering Internship</h3>
+            <br>
+            <p>There are numerous crypto exchanges out there trading 24/365. </p>
+            <br>
+            <p>Difference in trading behaviors from those exchanges might deviate the price thus provide chances to buy low and sell high.</p>
+            <br>
+            <p>I seeked to design a program that can exploit the price difference between exchange pairs simultaneously using Python.</p>
+            <br>
+            <blackquote>Bridge TechX CO., LTD</blackquote>
+          </div>
+
+          <div class="slide">
+            <h3>Data Scraping Internship</h3>
+            <br>
+            <p>There's no denying the power of big data is the fuel of cutting edge model and technology </p>
+            <br>
+            <p>My duty was to use Python to scrape data from large news source from the internet, do some data cleaning, store them into RDB</p>
+            <br>
+            <p>I also got to experience some other tools such as git, RabbitMQ, puppeteer.</p>
+            <br>
+            <blackquote>LargitData</blackquote>
+          </div>
+        </div>
+        <!--<button class="slider__btn slider__btn--left">&larr;</button>-->
+        <!--<button class="slider__btn slider__btn--right">&rarr;</button>-->
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="title"><h2>Project1 : ParkOasis Parking System</h2></div>
+
+        <div class="content">
+            <div class="left"><img src="image/parkoasis.png"></div>
+                
+            <div class="right">
+                <p>In this project, we implemented a web application specifically for employee who spare no time to find a parking space.
+                </p>
+                <br>
+                <p>
+                    With our application, the user is able to reserve a parking space within two click. 
+                </p>
+                <br>
+                <p>The application also features cancelling reservation, checking previous records, checking parking space status, allowing admin to monitor the usage of parking lot.</p>
+            </div>
+                
+
+        </div>
+        <div class="container">
+            <div class="title"><h2>Project 2 : Would this song go viral?</h2></div>
+    
+            <div class="content">
+                <div  class="left"><img src="image/model.png"></div>
+                    
+                <div  class="right">
+                    <p>We are curious what are some key factor that make music go viral</p>
+                <br>
+                    <p>Therefore, we collected dataset from kaggle, combining with data from spotify API. The dataset spans from 1980 to 2023</p>
+                <br>
+                    <p>The project consider three types of features, songs' metadata, lyrics mood, and audio feature</p>
+                <br>
+                    <p>We found the primary factor that affect the popularity of a song is its artist, and song duration.</p>
+            </div>
+                    
+    
+            </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <!-- Contact form or contact information goes here -->
+          
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
