@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-    <title>Portfolio John Huang</title>
     <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio John Huang</title>
+
   </head>
-  <body>
+  <body >
     <header>
-      <nav>
+      <nav class="navbar">
         <ul>
+          <li><a href="#intro">About me</a></li>
           <li><a href="#intern">Intern</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -18,59 +22,117 @@
       </nav>
     </header>
 
-    <section id="intro">
-      <div class="container">
-        <h1>Hello World!</h1>
-        <br>
-        <p>I am John. Currently majoring in information management in National Taiwan University.</p>
-        <br>
-        <p>Having a great passion for programming allows me to integrate technology and other fields and create interesting applications.</p> 
+    <section id="intro" class="bg1">
+      <div class="container flex_row">
+      <div class="box">
+        <h2 class="coding_text padbottom topmargin" id="sequence"></h2>
+
+        <h3 class="intro_text coding_text padbottom">Currently pursuing my studies at National Taiwan University.🎓 I have strong passion for
+        <span class="keyword">Software Engineer</span> and <span class="keyword">Data Science</span>.
+        Through my academic journey and internship experience, I have developed skills and guts it take to solve real-world problems!
+      </h3>
+        <div class="icon-box ">
+          <div class="icon">
+            <i class="devicon-python-plain"></i>
+            <span class="coding_text">Python</span>
+          </div>
+          <div class="icon">
+            <i class="devicon-javascript-plain"></i>
+            <span class="coding_text">JavaScript</span>
+
+          </div>
+          <div class="icon">
+            
+
+            <i class="devicon-mysql-original"></i>
+            <span class="coding_text">MySQL</span>
+
+          </div>
+          <div class="icon">
+
+
+            <i class="devicon-git-plain-wordmark"></i>
+                    
+            <span class="coding_text">Git</span>
+
+          </div>
+          <div class="icon">
+            
+            <i class="devicon-java-plain-wordmark"></i>
+            <span class="coding_text">Java</span>
+
+          </div>
+          <div class="icon">
+
+            <i class="devicon-html5-plain-wordmark"></i>
+            <span class="coding_text">HTML</span>
+
+          </div>
+
+        </div>
+      </div>  
+      <div  class="box">
+        <img src="image/profile.JPG">
+
       </div>
+      </div>
+
     </section>
 
-    <section id="intern" style="text-align: center;">
-
+    <section id="intern" style="text-align: center;" class="bg2">
+      <h1 class="header padbottom">INTERNSHIP</h1>
       <div class="container">
-        <h2>Internships</h2>
+        
         <br>
+        <div id="button__container">
+          <button class="button button-one button-active" data-tab="1">
+            1. Shin Kong Bank
+          </button>
+          <button class="button button-two" data-tab="2">
+            2. Bridge TechX
+          </button>
+          <button class="button button-three" data-tab="3">
+            3. LargitData 
+          </button>
+        
         
         <div class="internship-slider">
-          <div class="slide">
-            <h3>Machine Learning Internship</h3>
-            <br>
-            <p>
-              Providing a loan to customer has always been a crucial task for banks.</p>
-            <br>
+            <div class="slide__content slide__content-1 slide__content__active">
+              <h4>Machine Learning Internship</h4>
+              <br>
               <p>
-              My main job was to train a machine learning classification model
-              that can classify those who have potential to request a loan from
-              the bank. 
-            </p>
-            <br>
-              <p>
-                Thus, the loan business can grow with precise targeting.
-                Also, I introduced a data scraping framework into company for them
-                to scrape external data more efficiently.
+                Providing a loan to customer has always been a crucial task for banks.</p>
+              <br>
+                <p>
+                My main job was to train a machine learning classification model
+                that can classify those who have potential to request a loan from
+                the bank. 
               </p>
-            </p>
-            <br>
+              <br>
+                <p>
+                  Thus, the loan business can grow with precise targeting.
+                  Also, I introduced a data scraping framework into company for them
+                  to scrape external data more efficiently.
+                </p>
+              </p>
+              <br>
+            
             <blackquote>ShinKong Bank</blackquote>
           </div>
 
-          <div class="slide">
-            <h3>Data Engineering Internship</h3>
-            <br>
-            <p>There are numerous crypto exchanges out there trading 24/365. </p>
-            <br>
-            <p>Difference in trading behaviors from those exchanges might deviate the price thus provide chances to buy low and sell high.</p>
-            <br>
-            <p>I seeked to design a program that can exploit the price difference between exchange pairs simultaneously using Python.</p>
-            <br>
+            <div class="slide__content slide__content-2">
+              <h4>Data Engineering Internship</h4>
+              <br>
+              <p>There are numerous crypto exchanges out there trading 24/365. </p>
+              <br>
+              <p>Difference in trading behaviors from those exchanges might deviate the price thus provide chances to buy low and sell high.</p>
+              <br>
+              <p>I seeked to design a program that can exploit the price difference between exchange pairs simultaneously using Python.</p>
+              <br>
             <blackquote>Bridge TechX CO., LTD</blackquote>
-          </div>
-
-          <div class="slide">
-            <h3>Data Scraping Internship</h3>
+        </div>
+            <div class="slide__content slide__content-3">
+            <h4>Data Scraping Internship</h4>
             <br>
             <p>There's no denying the power of big data is the fuel of cutting edge model and technology </p>
             <br>
@@ -79,19 +141,21 @@
             <p>I also got to experience some other tools such as git, RabbitMQ, puppeteer.</p>
             <br>
             <blackquote>LargitData</blackquote>
-          </div>
         </div>
         <!--<button class="slider__btn slider__btn--left">&larr;</button>-->
         <!--<button class="slider__btn slider__btn--right">&rarr;</button>-->
-        <div class="dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+
       </div>
+      <div class="dots">
+        <span class="dot"  onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" style="text-align: center;" class="bg3">
+      <h1 class="header padbottom">PROJECTS</h1>
       <div class="container">
         <div class="title"><h2>Project1 : ParkOasis Parking System</h2></div>
 
@@ -131,12 +195,30 @@
             </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="bg4">
       <div class="container">
+        <h1 class="header padbottom">CONTACT</h1>
         <!-- Contact form or contact information goes here -->
-          
+          <div class="narrower topmargin padbottom" style="background-color:hsl(0, 0%, 100%);">
+            <ul>
+              <li class="topmargin contact">
+                <i class="fa fa-github fa-2xl" aria-hidden="true"></i>
+                <a href="https://github.com/chinaoel">https://github.com/chinaoel</a>
+              </li>
+
+              <li class="topmargin contact">
+                <i class="fa fa-envelope fa-2xl" aria-hidden="true"></i>
+                <a href="mailto:johnniewalking.huang@gmail.com">johnniewalking.huang@gmail.com</a>
+              </li>
+              <li class="topmargin contact">
+                <i class="fa fa-linkedin-square fa-2xl" aria-hidden="true"></i>
+                <a href="https://www.linkedin.com/in/johnhuang77/">https://www.linkedin.com/in/johnhuang77/</a>
+              </li>
+            </ul>
+          </div>
       </div>
     </section>
+    <footer></footer>
 
     <script src="script.js"></script>
   </body>
